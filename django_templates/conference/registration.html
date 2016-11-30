@@ -1,0 +1,47 @@
+{% extends "conference/home.html" %}
+{% block script %}
+{% include "conference/scriptemplate.html" %}
+<script>
+$(document).ready(function() {
+$('#id_position').change(function(){
+
+    if ($(this).val() == "stud"){
+    	$("p #fees").remove();
+    	$("p #id_position").after("<p id='fees'><b>Fee:</b><br>National: Rs.3500<br>International : 300 USD</p>");
+    }
+    if ($(this).val() == "staf"){
+    	$("p #fees").remove();
+    	$("p #id_position").after("<p id='fees'><b>Fee:</b><br>National: Rs.5000<br>International : 400 USD</p>");
+    }
+    if ($(this).val() == "prof"){
+    	$("p #fees").remove();
+    	$("p #id_position").after("<p id='fees'><b>Fee:</b><br>National: Rs.5000<br>International : 400 USD</p>");
+    }
+    if ($(this).val() == ""){
+    	$("p #fees").remove();
+    }
+
+});
+});
+</script>
+{% endblock %}
+ {% block body %}
+ <div class="bodyregistration">
+ <h2>Registration Form</h2>
+<form action="{{request.path}}" method="post" enctype="multipart/form-data" class="registration">{% csrf_token %}
+{% for field in form %}
+  <p>
+        <label for="{{ field.label }}">{{ field.label_tag }}
+        {% if field.field.required %}<span class="special_class">*</span>{% endif %}</label>
+		 {{ field.errors }}
+        {{ field }}
+    </p>
+
+{% endfor %}
+
+<input type="submit" id="submitbutton" value="Submit" />
+</form>
+</div>
+
+{% endblock %}
+

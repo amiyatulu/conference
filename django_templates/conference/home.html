@@ -1,0 +1,50 @@
+{% load url from future %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Genome Architecture</title>
+{% block script %}
+{% include "conference/scriptemplate.html" %}
+{% endblock %}
+</head>
+<body>
+
+      
+{% block topmenu %}
+{% include "conference/topmenutemplate.html" %}
+{% endblock %}
+    
+     
+      <div class="row">
+    {% block banner %}
+    {% include "conference/bannertemplate.html" %}
+    {% endblock %}
+     </div>
+    <br> 
+   
+    </header>
+    
+    
+    
+  </div>
+</div>
+<div id="page-wrapper">
+
+<div class="row">
+  {% block body %}
+    {% include "conference/bodytemplatemessage.html" %}
+    {% endblock %}
+</div>
+</div>
+{% block footer %}
+{% include "conference/footer.html" %}
+{% endblock %}
+</body>
+<script>
+$( document ).ready(function() {
+	var activeurl = window.location.pathname;
+	$('nav.floatleft a[href="'+activeurl+'"]').addClass('activePage');   
+});
+
+</script>
+</html>

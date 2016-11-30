@@ -1,0 +1,198 @@
+/*
+	Elemental: A responsive HTML5 website template by HTML5Templates.com
+	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
+	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
+*/
+
+/*********************************************************************************/
+/* Desktop (>= 480px)                                                            */
+/*********************************************************************************/
+
+
+/* Header Content Wrapper */
+
+
+p {
+	font-size:14px;
+}
+.homepage #header-wrapper2 {
+}
+.tablestyle {display:table;
+padding-left:40px;}
+.rowoftable {display:table-row;}
+.celloftable {display:table-cell;
+padding-left:50px;
+padding-right:50px;}
+.title{
+	position:relative;
+	width:550px;
+	top:190px;
+	left:428px;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	z-index:5;
+}
+.subheading {
+	font-size:12px;
+}
+.sponsor_table td {
+	padding:40px;
+}
+.content_message {
+	padding:40px;
+}
+/* Page Wrapper */
+.dropshadowclass { border: solid 1px #CCC; -moz-box-shadow: 5px 5px 0px #999; -webkit-box-shadow: 5px 5px 0px #999; box-shadow: 5px 5px 0px #999; }
+#page-wrapper {
+	overflow: hidden;
+	padding: 50px 0px;
+	background-color: #FFFFFF;
+}
+
+#page-wrapper h2 {
+	padding: 0px 0px 30px 0px;
+}
+
+#page-wrapper a img {
+}
+
+/* Footer Content Wrapper */
+
+#footer-wrapper {
+}
+
+/* Header */
+
+#header {
+}
+
+/* Logo */
+
+#logo {
+	overflow: hidden;
+	height: 60px;
+	padding-top: 50px;
+}
+
+#logo h1 a {
+	float: left;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #38800E;
+	text-transform: lowercase;
+	font-family: 'Lobster', cursive;
+	font-size: 54pt;
+	font-weight: 200;
+	color: #FFFFFF;
+}
+
+#logo p {
+	float: left;
+	padding-left: 10px;
+	letter-spacing: -2px;
+	font-family: 'Magra', sans-serif;
+	font-size: 20pt;
+	font-weight: 200;
+	color: black;
+}
+
+/* Menu */
+
+#menu {
+	overflow: hidden;
+	height: 49px;
+	margin-bottom: 20px;
+	background: url(images/menu-bg.png) no-repeat left top;
+}
+
+#menu li {
+	float: left;
+	background: url(images/menu-divider-bg.png) no-repeat right top;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 0px 20px;
+	line-height: 49px;
+	text-decoration: none;
+	font-size: 9pt;
+	color: #B2B2B2;
+}
+
+#menu a:hover {
+	background: url(images/menu-hover-bg.png) repeat-x left top;
+	color: #FFFFFF;
+}
+
+/* Banner Content */
+
+#banner {
+	position:relative;
+	bottom:60px;
+	padding:20px;
+	background-color: rgba(0,0,0,.1);
+}
+
+#banner a img {
+	width: 100%;
+	display: block;
+}
+
+/* Splash Content */
+.table-div{display:table;
+}
+.tr-div{display:table-row}
+.td-div{display:table-cell;
+vertical-align:middle;
+text-align:left;
+font-size:20px;
+font-weight:bold;}
+#splash {
+	overflow: hidden;
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -3px;
+	line-height: 110%;
+	text-align: center;
+	font-family: 'Magra', sans-serif;
+	font-weight: 300;
+	font-size: 48px;
+	color: #696969
+}
+
+#splash span {
+	color: #000000;
+}
+
+/* Footer Content */
+
+#footer-content {
+}
+
+#footer-content h2 {
+}
+
+#footer-content .margin-bottom {
+	padding-bottom: 20px;
+}
+
+/* Copyright */
+
+#copyright {
+	overflow: hidden;
+	height: 200px;
+	text-align: center;
+	font-size: 10pt;
+	color: #555;
+	padding: 2em;
+}
+
+#copyright p {
+	padding: 40px 0px 0px 0px;
+	text-align: center;
+}
+
+#copyright a {
+	color: #555;
+}
